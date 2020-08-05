@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  overflow: hidden;
+  border: 1px solid #f5f5f5;
+}
+input[type="radio"]{
+  display: none;
+}
+.label1,.label2{
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-size: 100px 100px;
+  background: linear-gradient(
+    to bottom,
+    white 0, white 50px,
+    #adadad 50px, #adadad 100px
+    );
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+  color: #adadad;
+}
+.label2{
+  right: 0;
+}
+
+span{
+  display: flex;
+  height: 50px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+input:checked + label{
+  background-position: 0 -50px;
+  color: white;
+}
